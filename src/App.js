@@ -18,7 +18,7 @@ useEffect(() => {
   const fetchData = async () => {
     await fetch(`https://www.amiiboapi.com/api/amiibo/?gameseries=${filter.series}`)
       .then(res => res.json())
-      .then(data => setAmiibos(data.amiibo.filter((amiibo => amiibo.type == `${filter.type}`))))
+      .then(data => setAmiibos(data.amiibo.filter((amiibo => amiibo.type === `${filter.type}`))))
   }
 
   fetchData()
