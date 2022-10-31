@@ -1,0 +1,10 @@
+.amiibo img {
+    transition: 200ms ease-in;
+}
+
+.amiibo img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 20px 5px rgba(0,0,0,1);
+    cursor: pointer;
+}
+
